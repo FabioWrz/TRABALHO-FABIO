@@ -1,0 +1,451 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API FABIO WRZESINSKI",
+    "description": "Documentação de API FABIO WRZESINSKI"
+  },
+  "host": "localhost:3000",
+  "basePath": "",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/clientes": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "summary": "Busca lista de Clientes.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Clientes"
+        ],
+        "summary": "Insere 1 Cliente.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "json",
+            "in": "body",
+            "description": "Dados para cadastrar um Cliente",
+            "type": "json",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "cli_id_cliente": {
+                  "type": "number",
+                  "example": 1
+                },
+                "cli_nome": {
+                  "type": "string",
+                  "example": "Fabio"
+                },
+                "cli_cpf_cnpj": {
+                  "type": "string",
+                  "example": "117.505.789-48"
+                },
+                "cli_cidade": {
+                  "type": "string",
+                  "example": "Sul Brasil-SC"
+                },
+                "cli_endereco": {
+                  "type": "string",
+                  "example": "Rua Presidente Juscelino"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Clientes"
+        ],
+        "summary": "Deleta 1 Cliente.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Id do Cliente",
+            "value": "1",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Nenhum Conteúdo"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Clientes"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/funcionarios": {
+      "get": {
+        "tags": [
+          "Funcionarios"
+        ],
+        "summary": "Busca lista de Funcionarios.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Funcionarios"
+        ],
+        "summary": "Insere 1 Funcionario.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "json",
+            "in": "body",
+            "description": "Dados para cadastrar um Funcionario",
+            "type": "json",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fun_id_funcionario": {
+                  "type": "number",
+                  "example": 1
+                },
+                "fun_nome": {
+                  "type": "string",
+                  "example": "Oda"
+                },
+                "fun_cidade": {
+                  "type": "string",
+                  "example": "1"
+                },
+                "fun_endereco": {
+                  "type": "string",
+                  "example": "Rua Presidente Juscelino"
+                },
+                "fun_cpf": {
+                  "type": "string",
+                  "example": "117.123.759-12"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Funcionarios"
+        ],
+        "summary": "Deleta 1 Funcionario.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Id do Funcionario",
+            "value": "1",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Nenhum Conteúdo"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Funcionarios"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/produtos": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Busca lista de Produtos.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Insere 1 Produto.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "json",
+            "in": "body",
+            "description": "Dados para cadastrar um Produto",
+            "type": "json",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "pro_id_produto": {
+                  "type": "number",
+                  "example": 1
+                },
+                "pro_nome": {
+                  "type": "string",
+                  "example": "Feijão"
+                },
+                "pro_estoque": {
+                  "type": "string",
+                  "example": "24"
+                },
+                "pro_fornecedor": {
+                  "type": "string",
+                  "example": "1"
+                },
+                "pro_marca": {
+                  "type": "string",
+                  "example": "Boniella"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Deleta 1 Produto.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Id do Produto",
+            "value": "1",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Nenhum Conteúdo"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/vendas": {
+      "get": {
+        "tags": [
+          "Vendas"
+        ],
+        "summary": "Busca lista de Vendas.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vendas"
+        ],
+        "summary": "Insere 1 Vendas.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "json",
+            "in": "body",
+            "description": "Dados para fazer uma Venda",
+            "type": "json",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ven_id_venda": {
+                  "type": "number",
+                  "example": 1
+                },
+                "ven_cliente": {
+                  "type": "string",
+                  "example": "1"
+                },
+                "ven_datavenda": {
+                  "type": "string",
+                  "example": "30/09/2021"
+                },
+                "ven_valor_total": {
+                  "type": "string",
+                  "example": "12,99"
+                },
+                "ven_funcionario": {
+                  "type": "string",
+                  "example": "1"
+                },
+                "ven_pagamento": {
+                  "type": "string",
+                  "example": "1"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Criado"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vendas"
+        ],
+        "summary": "Deleta 1 Venda.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Id da Venda",
+            "value": "1",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Nenhum Conteúdo"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Vendas"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
