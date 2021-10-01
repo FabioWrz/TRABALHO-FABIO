@@ -31,7 +31,7 @@ app.delete('/funcionarios/:fun_id_funcionario', FuncionariosController.deleteFun
  //#region Documentação
     //#swagger.summary = 'Deleta 1 Funcionario.'
         /*  #swagger.tags = ['Funcionarios']
-        #swagger.parameters['id'] = {
+        #swagger.parameters['fun_id_funcionario'] = {
      description: "Id do Funcionario",
      value: "1"
 }

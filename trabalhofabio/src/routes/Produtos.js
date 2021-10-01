@@ -31,10 +31,10 @@ module.exports = (app) => {
     //#region Documentação
     //#swagger.summary = 'Deleta 1 Produto.'
         /*  #swagger.tags = ['Produtos']
-        #swagger.parameters['id'] = {
-     description: "Id do Produto",
-     value: "1"
-}
+        #swagger.parameters['pro_id_produto'] = {
+            description: "Id do Produto",
+            value: "1"
+        }
         */
         //#endregion
     )

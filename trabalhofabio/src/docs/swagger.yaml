@@ -226,14 +226,9 @@
             "name": "fun_id_funcionario",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "id",
+            "type": "string",
             "description": "Id do Funcionario",
-            "value": "1",
-            "in": "query",
-            "type": "string"
+            "value": "1"
           }
         ],
         "responses": {
@@ -340,14 +335,9 @@
             "name": "pro_id_produto",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "id",
+            "type": "string",
             "description": "Id do Produto",
-            "value": "1",
-            "in": "query",
-            "type": "string"
+            "value": "1"
           }
         ],
         "responses": {
@@ -402,11 +392,11 @@
                 },
                 "ven_datavenda": {
                   "type": "string",
-                  "example": "30/09/2021"
+                  "example": "2021-09-30"
                 },
                 "ven_valor_total": {
-                  "type": "string",
-                  "example": "12,99"
+                  "type": "number",
+                  "example": 12.99
                 },
                 "ven_funcionario": {
                   "type": "string",
@@ -458,14 +448,9 @@
             "name": "ven_id_venda",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "id",
+            "type": "string",
             "description": "Id da Venda",
-            "value": "1",
-            "in": "query",
-            "type": "string"
+            "value": "1"
           }
         ],
         "responses": {

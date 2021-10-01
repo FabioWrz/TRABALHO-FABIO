@@ -2,15 +2,15 @@ const db = require('../configs/pg')
 
 const getFuncionarios = async () => {
     let sql = 'select * from funcionarios';
-    let funcionarios =  await db.query(sql)
-        .then(ret => clientes = {total: ret.rows.length, clientes: ret.rows})
-        .catch(err => clientes = err.stack);
-
+    let funcionarios = await db.query(sql)
+        .then(ret => funcionario = {total: ret.rows.length, funcionarios: ret.rows})
+        .catch(err => functionario = err.stack);
+        
     return funcionarios;
 }
 
 const sql =
-`insert into Funcionarios (fun_id_funcionario, fun_nome, fun_cidade, fun_endereco, fun_cpf)
+`insert into funcionarios (fun_id_funcionario, fun_nome, fun_cidade, fun_endereco, fun_cpf)
 values ($1, $2, $3, $4, $5) `
 
 const postFuncionarios = async (params) => {

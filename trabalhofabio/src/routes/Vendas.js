@@ -19,8 +19,8 @@ module.exports = (app) => {
                 schema: {
                     ven_id_venda: 1,
                     ven_cliente: "1",
-                    ven_datavenda: "30/09/2021",
-                    ven_valor_total: "12,99",
+                    ven_datavenda: "2021-09-30",
+                    ven_valor_total: 12.99,
                     ven_funcionario: "1",
                     ven_pagamento: "1"
                 }
@@ -32,10 +32,10 @@ module.exports = (app) => {
       //#region Documentação
     //#swagger.summary = 'Deleta 1 Venda.'
         /*  #swagger.tags = ['Vendas']
-        #swagger.parameters['id'] = {
-     description: "Id da Venda",
-     value: "1"
-}
+        #swagger.parameters['ven_id_venda'] = {
+            description: "Id da Venda",
+            value: "1"
+        }
         */
         //#endregion
     )

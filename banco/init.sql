@@ -2,7 +2,7 @@ create table clientes (
     cli_id_cliente   int primary key not null,
     cli_nome      varchar(100) not null,
     cli_cpf_cnpj  varchar(20) not null,
-    cli_cidade    integer not null,
+    cli_cidade    varchar(100) not null,
     cli_endereco  varchar(100)
 );
 
