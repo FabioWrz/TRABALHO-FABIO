@@ -26,8 +26,8 @@ const sql_delete =
 where cli_id_cliente = $1`
 
 const deleteClientes = async (params) => {
-    const { id } = params
-    await db.query(sql_delete, [id])
+    const { cli_id_cliente } = params
+    await db.query(sql_delete, [cli_id_cliente])
 }
 
 const patchClientes = async (params) => {

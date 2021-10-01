@@ -28,7 +28,7 @@ module.exports = (app) => {
         */
         //#endregion
     )
-    app.delete('/vendas', VendasController.deleteVendas
+    app.delete('/vendas/:ven_id_venda', VendasController.deleteVendas
       //#region Documentação
     //#swagger.summary = 'Deleta 1 Venda.'
         /*  #swagger.tags = ['Vendas']

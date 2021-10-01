@@ -1,7 +1,7 @@
 const db = require('../configs/pg')
 
 const getProdutos = async () => {
-    let sql = 'select * from "PRODUTOS"';
+    let sql = 'select * from produtos';
     let Produtos = {};
 
     await db.query(sql)
@@ -12,7 +12,7 @@ const getProdutos = async () => {
 }
 
 const sql =
-`insert into Produtos ( pro_id_produto, pro_nome, pro_estoque, pro_fornecedor, pro_marca)
+`insert into Produtos (pro_id_produto, pro_nome, pro_estoque, pro_fornecedor, pro_marca)
 values ($1, $2, $3, $4, $5) `
 
 const postProdutos = async (params) => {
@@ -22,11 +22,11 @@ const postProdutos = async (params) => {
 
 const sql_delete =
 `delete from Produtos
-where id = $1`
+where pro_id_produto = $1`
 
 const deleteProdutos = async (params) => {
-    const { id } = params
-    await db.query(sql_delete, [id])
+    const { pro_id_produto } = params
+    await db.query(sql_delete, [pro_id_produto])
 }
 
 const patchProdutos = async (params) => {

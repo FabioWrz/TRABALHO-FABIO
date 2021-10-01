@@ -27,7 +27,7 @@ app.post('/funcionarios', FuncionariosController.postFuncionarios
         */
         //#endregion
         )
-app.delete('/funcionarios', FuncionariosController.deleteFuncionarios
+app.delete('/funcionarios/:fun_id_funcionario', FuncionariosController.deleteFuncionarios
  //#region Documentação
     //#swagger.summary = 'Deleta 1 Funcionario.'
         /*  #swagger.tags = ['Funcionarios']

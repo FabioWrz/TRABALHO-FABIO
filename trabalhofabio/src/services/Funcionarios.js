@@ -20,11 +20,11 @@ const postFuncionarios = async (params) => {
 
 const sql_delete =
 `delete from Funcionarios
-where id = $1`
+where fun_id_funcionario = $1`
 
 const deleteFuncionarios = async (params) => {
-    const { id } = params
-    await db.query(sql_delete, [id])
+    const { fun_id_funcionario } = params
+    await db.query(sql_delete, [fun_id_funcionario])
 }
 
 const patchFuncionarios = async (params) => {

@@ -1,0 +1,12 @@
+version: "3"
+services:
+  trabalhofabio:
+    image: trabalhofabio
+    container_name: trabalhofabio
+    ports:
+      - "3000:3000"
+  bancofabio:
+    image: bancofabio
+    container_name: bancofabio
+    ports: 
+      - "5432:5432"

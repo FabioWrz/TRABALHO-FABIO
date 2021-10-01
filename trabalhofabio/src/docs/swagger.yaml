@@ -83,6 +83,24 @@
           }
         }
       },
+      "patch": {
+        "tags": [
+          "Clientes"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/clientes/{cli_id_cliente}": {
       "delete": {
         "tags": [
           "Clientes"
@@ -90,6 +108,12 @@
         "summary": "Deleta 1 Cliente.",
         "description": "",
         "parameters": [
+          {
+            "name": "cli_id_cliente",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
           {
             "name": "id",
             "description": "Id do Cliente",
@@ -101,22 +125,6 @@
         "responses": {
           "204": {
             "description": "Nenhum Conteúdo"
-          },
-          "500": {
-            "description": "Erro Interno do Servidor"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Clientes"
-        ],
-        "summary": "Atualização parcial dos registros.",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -189,6 +197,24 @@
           }
         }
       },
+      "patch": {
+        "tags": [
+          "Funcionarios"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/funcionarios/{fun_id_funcionario}": {
       "delete": {
         "tags": [
           "Funcionarios"
@@ -196,6 +222,12 @@
         "summary": "Deleta 1 Funcionario.",
         "description": "",
         "parameters": [
+          {
+            "name": "fun_id_funcionario",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
           {
             "name": "id",
             "description": "Id do Funcionario",
@@ -207,22 +239,6 @@
         "responses": {
           "204": {
             "description": "Nenhum Conteúdo"
-          },
-          "500": {
-            "description": "Erro Interno do Servidor"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Funcionarios"
-        ],
-        "summary": "Atualização parcial dos registros.",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -295,6 +311,24 @@
           }
         }
       },
+      "patch": {
+        "tags": [
+          "Produtos"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/produtos/{pro_id_produto}": {
       "delete": {
         "tags": [
           "Produtos"
@@ -302,6 +336,12 @@
         "summary": "Deleta 1 Produto.",
         "description": "",
         "parameters": [
+          {
+            "name": "pro_id_produto",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
           {
             "name": "id",
             "description": "Id do Produto",
@@ -313,22 +353,6 @@
         "responses": {
           "204": {
             "description": "Nenhum Conteúdo"
-          },
-          "500": {
-            "description": "Erro Interno do Servidor"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Produtos"
-        ],
-        "summary": "Atualização parcial dos registros.",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -405,6 +429,24 @@
           }
         }
       },
+      "patch": {
+        "tags": [
+          "Vendas"
+        ],
+        "summary": "Atualização parcial dos registros.",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Erro Interno do Servidor"
+          }
+        }
+      }
+    },
+    "/vendas/{ven_id_venda}": {
       "delete": {
         "tags": [
           "Vendas"
@@ -412,6 +454,12 @@
         "summary": "Deleta 1 Venda.",
         "description": "",
         "parameters": [
+          {
+            "name": "ven_id_venda",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
           {
             "name": "id",
             "description": "Id da Venda",
@@ -423,22 +471,6 @@
         "responses": {
           "204": {
             "description": "Nenhum Conteúdo"
-          },
-          "500": {
-            "description": "Erro Interno do Servidor"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Vendas"
-        ],
-        "summary": "Atualização parcial dos registros.",
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
           },
           "500": {
             "description": "Erro Interno do Servidor"
