@@ -31,7 +31,7 @@ module.exports = (app) => {
     //#region Documentação
     //#swagger.summary = 'Deleta 1 Cliente.'
         /*  #swagger.tags = ['Clientes']
-        #swagger.parameters['id'] = {
+        #swagger.parameters['cli_id_cliente'] = {
      description: "Id do Cliente",
      value: "1"
 }

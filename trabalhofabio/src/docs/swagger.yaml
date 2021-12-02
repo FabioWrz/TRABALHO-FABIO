@@ -112,14 +112,9 @@
             "name": "cli_id_cliente",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "id",
+            "type": "string",
             "description": "Id do Cliente",
-            "value": "1",
-            "in": "query",
-            "type": "string"
+            "value": "1"
           }
         ],
         "responses": {

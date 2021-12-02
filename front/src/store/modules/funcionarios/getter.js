@@ -1,0 +1,1 @@
+export const funcionarios = (state) => state.funcionarios

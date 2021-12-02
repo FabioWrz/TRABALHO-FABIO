@@ -1,0 +1,1 @@
+export const GET_FUNCIONARIOS = "GET_FUNCIONARIOS"

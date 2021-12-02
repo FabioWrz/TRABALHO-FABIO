@@ -1,0 +1,1 @@
+export const produtos = (state) => state.produtos
